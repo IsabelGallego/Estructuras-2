@@ -1,1 +1,76 @@
 
+public void addLast (T d) {
+    Nodo <T> newNode = nuevo Nodo <> (d);
+    Nodo <T> currentNode = head;
+    Nodo <T> currentNode2 = cabeza;
+    int cont = 0;
+
+    booleano comprobado = falso;
+
+    while ((currentNode2! = null) && (check == false)) {
+        if ((int) currentNode2.getData () == (int) d) {
+            System.out.println ("El dato ya existe");
+            comprobado = verdadero;                 
+        }
+        currentNode2 = currentNode2.getNextNode ();
+    }
+
+    si (marcado == falso) {
+        while (currentNode.getNextNode ()! = null) {
+            currentNode = currentNode.getNextNode ();
+        }
+        
+        currentNextNode.setNextNode (newNode);
+        cont ++;
+}
+}
+
+--------------------------------------------------------------------------------------
+
+public void addAfter (T a, T b) {
+    
+    booleano comprobado = falso;
+    Nodo <T> newNode = nuevo Nodo <> (a);
+    int cont = 0;
+    
+    para (Nodo <T> i = cabeza; i! = nulo; i = i.getNextNode ()) {
+        if (i.getData () == b) {
+            newNode.setNextNode (i.getNextNode ());
+            i.setNextNode (newNode);
+            cont ++;
+            comprobado = verdadero;
+        }
+    }
+    
+    si (marcado == falso) {
+        System.out.println ("No existe el dato");
+    }
+}
+
+------------------------------------------------------------------------------------------
+public void deleteLast () {
+
+    int cont = 0;
+    
+    if (isEmpty ()) {
+        System.out.println ("La lista se encuentra vacía");
+    }
+    demás{
+        if (head! = null) {
+            Nodo <T> currentNode = head;
+            
+            while (currentNode.getNextNode ()! = null) {
+                currentNode = currentNode.getNextNode ();}
+            
+            Nodo <T> currentNode2 = cabeza;
+            while (currentNode2.getNextNode ()! = currentNode) {
+                currentNode2 = currentNode2.getNextNode (); }
+            
+            currentNode = currentNode2;
+            currentNode.setNextNode (nulo);
+            cont--; }
+        demás{
+            cabeza = cola = nulo;
+        }
+    }
+}
