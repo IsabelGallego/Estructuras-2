@@ -1,1 +1,22 @@
-
+@Anular
+búsqueda de vacío público (T d) {
+    booleano checkFounded = falso;
+    
+    if (isEmpty ()) {
+        falso retorno;
+    }
+    demás{
+        DoubleNode <T> currentNode = head.getPreviousNode ();
+        hacer{
+            if (currentNode.getData () == d) {
+                checkFounded = verdadero;
+            }
+            currentNode = currentNode.getPreviousNode ();
+        } while (currentNode! = head.getPreviousNode () && checkFounded! = true);
+        
+        if ((int) currentNode.getNextNode (). getData () == (int) d) {
+            checkFounded = verdadero;
+        }
+    }
+    return checkFounded;
+}
