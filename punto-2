@@ -1,1 +1,31 @@
+public void addOrdered () {
+    
+}
 
+
+@Anular
+borrado booleano público (T d) {
+    boolean viewDeleted = false;
+    DoubleNode <T> currentNode = head;
+    DoubleNode <T> antes = nulo;
+    
+    while (currentNode! = null) {
+        if (currentNode.getData () == d) {
+            si (antes == nulo) {
+                head = head.getNextNode ();
+                currentNode.srtNextNode (nulo);
+                currentNode = head;
+            }
+            demás{
+                before.setNextNode (currentNode.getNextNode ());
+                currentNode.setNextNode (nulo);
+                currentNode = before.getNextNode ();
+            }
+        }demás{
+            before = currentNode;
+            currentNode = currentNode.getNextNode ();
+        }
+    }
+
+    return viewDeleted;
+}
