@@ -1,1 +1,21 @@
-
+@Anular
+public void deleteFirts () {
+    Node <T> nodeHeadAux = head;
+    if (isEmpty ()) {
+        System.out.println ("La lista esta vacía");
+    }
+    demás{
+        if (head.getNextNode () == head.getPreviousNode ()) {
+            cabeza = nulo;
+        }
+        demás{
+            while (nodeHeadAux.getNextNode ()! = head) {
+                nodeHeadAux = nodeHeadAux.getNextNode ();
+            }
+            
+            nodeHeadAux.setNextNode (head.getNextNode ());
+            head.getNextNode (). setPreviousNode (nodeHeadAux);
+            head = head.getNextNode;
+            }
+        }
+}
