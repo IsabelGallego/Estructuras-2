@@ -1,4 +1,11 @@
+@Anular
 
+
+public boolean isEmpty () {
+    return head == null;
+}
+
+@Anular
 public void addLast (T d) {
     Nodo <T> newNode = nuevo Nodo <> (d);
     Nodo <T> currentNode = head;
@@ -9,7 +16,7 @@ public void addLast (T d) {
 
     while ((currentNode2! = null) && (check == false)) {
         if ((int) currentNode2.getData () == (int) d) {
-            System.out.println ("El dato ya existe");
+            System.out.println ("El dato ya existe en la lista");
             comprobado = verdadero;                 
         }
         currentNode2 = currentNode2.getNextNode ();
@@ -25,8 +32,7 @@ public void addLast (T d) {
 }
 }
 
---------------------------------------------------------------------------------------
-
+@Anular
 public void addAfter (T a, T b) {
     
     booleano comprobado = falso;
@@ -47,7 +53,8 @@ public void addAfter (T a, T b) {
     }
 }
 
-------------------------------------------------------------------------------------------
+
+@Anular
 public void deleteLast () {
 
     int cont = 0;
