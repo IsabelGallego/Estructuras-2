@@ -1,4 +1,9 @@
 public void addOrdered () {
+    int numMin = Entero. MIN_VALUE;
+        currentNode;
+        actual = cabeza;
+        nodo currentAux;
+        actualAux = cabeza;
     
 }
 
@@ -27,5 +32,5 @@ borrado booleano público (T d) {
         }
     }
 
-    return viewDeleted;
+    return checkDeleted
 }
