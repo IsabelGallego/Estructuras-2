@@ -20,3 +20,34 @@ búsqueda de vacío público (T d) {
     }
     return checkFounded;
 }
+
+
+
+public void orderDesc () {
+        int numMin = Entero. MIN_VALUE;
+        NodeLCD actual;
+        actual = primero;
+        NodeLCD currentAux;
+        actualAux = primero;
+        
+    }
+
+        
+        
+        
+  public static void main (String [] args) {
+        Lista lista4 = nueva Lista ();
+        lista 4. insertar (10);
+        lista 4. insertar (20);
+        lista 4. insertar (30);
+        lista 4. mostrar lista ();
+        int indice = lista4.search (30);
+        si (índice <0) {
+            Sistema . fuera . println ("el número no está en la lista");
+        }demás{
+            Sistema . fuera . println ("el número está en la posición" + índice + "de la lista");
+        }
+        
+        
+    }       
+}
